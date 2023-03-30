@@ -60,9 +60,11 @@ function paintTask() {
 paintTask();
 
 function pepino(ev) {
+  //el id del elemento clicado
   console.log(ev.target.id);
   const position = ev.target.id;
   console.log(tasks[position]);
+  // modificar la propiedad completed  asignandole el valor contrario
   tasks[position].completed = !tasks[position].completed;
   paintTask();
 }
