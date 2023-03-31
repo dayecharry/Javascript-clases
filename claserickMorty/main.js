@@ -58,7 +58,6 @@ const filtrarDatos = (datosMapeados) => {
     3.- hago el filtro con los datos del input --> filter retorna un nuevo array
     4.- llamar a la función pintardatos(arrayfiltrado)
   */
-
   input.addEventListener('keyup', (ev) => {
     // recogemos los datos de los inputs
     const inputValue = ev.target.value;
@@ -73,6 +72,7 @@ const filtrarDatos = (datosMapeados) => {
     pintarDatos(datosFiltrados);
   });
 };
+
 // función  empieza a hacer la petición al servidor
 const inicializar = async () => {
   // tengo los datos de la API guardados en locations
